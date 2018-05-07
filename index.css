@@ -1,0 +1,183 @@
+#top-container{
+
+width: 1200px;
+flex-wrap: wrap;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: right;
+}
+
+#card{
+border-radius: 5px;
+background-color: #33FFC7;
+width: 300px;
+height:200px;
+
+}
+
+#desc{
+height: 200px;
+width: 700px;
+background-color: red;
+
+}
+
+#card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#below-container{
+margin-left: auto;
+margin-right: auto;
+width: 350px;
+ 
+height: 400px;
+}
+
+
+
+#image{
+width: 200px;
+ 
+height: 200px;
+}
+
+
+
+.grid {
+  display: flex;                       
+  flex-wrap: wrap;                    
+  justify-content:space-between
+  
+}
+
+
+
+
+
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+.tabs button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+
+#right-change{
+background-color: #CEE3F6;
+max-width:100%;
+
+margin-left:auto;
+margin-right:auto;
+
+}
+
+
+.cell {
+  width: 100px;                  
+  height: 50px;
+  margin-bottom: 5px;
+  
+}
+
+#a{
+
+width:300px;
+height:200px;
+}
+
+#contact-container ul{
+list-style: none;
+}
+
+#contact-container ul li{
+background-color: blue;
+width: 150px;
+border: 1px solid white;
+text-align: center;
+font-color: green;
+}
+
+
+#contact-container ul li:hover{
+background-color: #B2BABB;
+cursor: pointer;
+}
+
+#contact-container ul ul{
+display: none;
+}
+
+
+#contact-container ul li:hover > ul{
+display: block;
+}
+
+
+#contact-button{
+background-color: blue;
+border: none;
+outline: none;
+
+}
+
+
+#contact-button:hover{
+background-color: red;
+border: none;
+outline: none;
+cursor: pointer;
+}
+
+#contactdetails{
+display: none;
+}
+
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+
+
+#about{
+   display:none;
+
+}
+
+#work{
+   display:none;
+
+}
+
+#interest{
+   display:none;
+
+}
+
+#webwork{
+   display:none;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    #top-container {
+       flex-direction: column;
+       max-width:100%;
+ }
+   #desc {
+    width: 500px;
+}
+}

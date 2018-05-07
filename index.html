@@ -1,0 +1,162 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+</head>
+<body onload="startTimer()">
+
+<div id="top-container">
+<div id="card">
+<h1>Pawan Dubey</h1>
+<h2>Software Engineer</h2>
+<h4>Web Developer</h4>
+</div>
+
+<div id="desc">
+<img id="change" src="first.jpg"/>
+
+</div>
+
+<div id="image">
+<img id="change" src="iimm.png"/>
+</div>
+</div>
+
+
+
+<div id="right-change">
+<div class="tabs">
+<button class="button" onclick="showcontent('about')">About me</button>
+<button class="button" onclick="showcontent('work')">Work experience</button>
+<button class="button" onclick="showcontent('interest')">Area of interest</button>
+<button class="button" onclick="showcontent('webwork')">Web work</button>
+</div>
+
+<div id="about">
+<h3>About me</h3>
+<p>I am a software engineer who is passionate about programming and logic building.I believe that I am result oriented, quick learner, professional with good technical background.I believe that creativity comes with skills and experience.I have four years of industry experience as a Production support engineer.I have worked with Tech Mahindra Ltd. for four years.</p>
+</div>
+
+<div id="work">
+<h3>Work Experience</h3>
+<p>I have worked for four years for Tech Mahindra Ltd in Production Application support role.I was part of the project which was working to provide support to AT&T Enterprise Midrange mission critical application.
+My responsibilities included :
+•	Provide support to AT&T Enterprise Midrange mission critical application, monitoring support and troubleshooting.
+•	Participate in outage call to provide quick resolution within the SLA.
+•	Participate in review meetings of various deliverables for releases/projects. 
+•	Implement CR’s that has been approved by the Change Management group and validate them.
+•	Doing reboot validation of application & database of Application servers on UNIX platform. 
+•	Support ad hoc requests from Application Testing team, which can involve creation of test data, analysis of test results etc.
+•	User management for all support applications.
+•	Deployment & Support activities 
+•	Documentation of alert resolution and middleware application issues to reduce the MTTR (Mean time to resolve)
+•	Responsible for monitoring production jobs like daily jobs, weekly jobs, monthly Jobs, etc and their  respective log files
+•	Involved in patching activities on different UNIX server
+        Languages	: Shell Scripting, SQL
+</p>
+<p>
+I was also a part of the project which was working to provide third party access to vodafone network and servers.
+Project Name: Vodafone Access Control Gateway Delivery
+Project Description:
+Access Control Gateway is working for Vodafone-UK to deliver third party access to Vodafone network and servers. 
+Role: 	Team Member
+</p>
+</div>
+
+<div id="interest">
+<h3>Area of interest</h3>
+<p> I am particularly interested in design and development of web based enterprise applications in Java and related technologies/framworks. Object oriented concepts and design patterns.I have a deep understanding of Object-relational mapping technologies like hibernate and Spring web MVC framework.</p>
+</div>
+
+
+<div id="webwork">
+<h3>Webwork</h3>
+<p>I have created my portfolio which can be viewed using the below link:</p>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+<div id="below-container">
+<h3>TECHNOLOGIES INTERESTED IN !</h3>
+<div id="a">
+<div class="grid">
+  <div class="cell"><img src="angular.png"/></div>
+  <div class="cell"><img src="node.png"/></div>
+  <div class="cell"><img src="java.png"/></div>
+  <div class="cell"><img src="jquery.png"/></div>
+  <div class="cell"><img src="hibernate.png"/></div>
+  <div class="cell"><img src="javascript.png"/></div>
+  <div class="cell"><img src="mongodb.png"/></div>
+  <div class="cell"><img src="spring.png"/></div>
+  <div class="cell"><img src="oracle.png"/></div>
+</div>
+</div>
+<div id="contact-container">
+<ul>
+<li>Connect with me
+<ul>
+<a href="https://www.facebook.com/pawan1dubey" target="_blank">Facebook</a>
+<a href="https://www.linkedin.com/in/pawan-dubey-03476627/" target="_blank">Linkedin</a>
+</ul>
+</li>
+
+<button id="contact-button" onclick="showcontactdetail('contactdetails')">Contact me</button>
+</ul>
+</div>
+
+<div id="contactdetails">
+<p>Call me on 0000000000 or email to pawan.dubey.nit@gmail.com</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var x=0;
+let item=["first.jpg","second.jpg","third.jpg","fourth.jpg","fifth.jpg","sixth.jpg","sixth.jpg"];
+function changeImage(){
+document.getElementById("change").src=item[x];
+x=x+1;
+if(x==item.length-1){
+x=0;
+}
+}
+
+function startTimer(){
+  setInterval(changeImage,3000);
+}
+
+function showcontactdetail(id){
+document.getElementById(id).style.display = "block";
+}
+
+function showcontent(id){
+        document.getElementById("about").style.display = "none";
+        document.getElementById("work").style.display = "none";
+        document.getElementById("interest").style.display = "none";
+        document.getElementById("webwork").style.display = "none";
+        document.getElementById(id).style.display = "block";
+}
+
+</script>
+
+
+</script>
+</body>
+</html>
